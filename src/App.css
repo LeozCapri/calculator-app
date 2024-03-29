@@ -41,9 +41,11 @@
   background-color: #fff;
   text-decoration-color: aliceblue;
 } */
+
+
 .calculator {
-  width: 90vw;
-  max-width: 350px;
+  width: 390px; /* iPhone 12 Pro width */
+  height: 844px; /* iPhone 12 Pro height */
   margin: auto;
   border: none;
   border-radius: 10px;
@@ -55,6 +57,7 @@
 .container {
   display: flex;
   justify-content: center;
+  height: 100%;
 }
 
 .keypad {
@@ -69,8 +72,8 @@
 
 .btn {
   width: calc(25% - 10px);
-  height: 50px;
-  font-size: 20px;
+  height: 70px;
+  font-size: 24px;
   border: none;
   outline: none;
   border-radius: 20px;
@@ -85,8 +88,8 @@
 
 input[type="text"] {
   width: calc(100% - 20px);
-  height: 50px;
-  font-size: 24px;
+  height: 380px;
+  font-size: 32px;
   border: none;
   border-radius: 10px;
   padding: 0 10px;
@@ -118,4 +121,22 @@ input[type="text"] {
 
 .btn.operator {
   background-color: #ff9800; /* Orange background for operator buttons */
+}
+
+/* Media Query for iPhone 12 Pro */
+@media only screen and (max-device-width: 428px) {
+  .calculator {
+    width: 375px; /* iPhone 12 Pro width */
+    max-width: 375px; /* iPhone 12 Pro width */
+    height: 812px; /* iPhone 12 Pro height */
+  }
+  
+  input[type="text"] {
+    font-size: 32px; /* Increase font size for text input */
+  }
+  
+  .btn {
+    height: 70px; /* Increase button height */
+    font-size: 24px; /* Adjust font size for buttons */
+  }
 }
