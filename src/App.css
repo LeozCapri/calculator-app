@@ -43,9 +43,10 @@
 } */
 
 
+/* Base styles */
 .calculator {
-  width: 390px; /* iPhone 12 Pro width */
-  height: 844px; /* iPhone 12 Pro height */
+  width: 355px; /* Default width */
+  height: 844px; /* Default height */
   margin: auto;
   border: none;
   border-radius: 10px;
@@ -88,7 +89,7 @@
 
 input[type="text"] {
   width: calc(100% - 20px);
-  height: 380px;
+  height: 355px;
   font-size: 32px;
   border: none;
   border-radius: 10px;
@@ -127,16 +128,16 @@ input[type="text"] {
 @media only screen and (max-device-width: 428px) {
   .calculator {
     width: 375px; /* iPhone 12 Pro width */
-    max-width: 375px; /* iPhone 12 Pro width */
+    max-width: 355px; /* iPhone 12 Pro width */
     height: 812px; /* iPhone 12 Pro height */
   }
   
   input[type="text"] {
-    font-size: 32px; /* Increase font size for text input */
+    font-size: 28px; /* Adjust font size for text input */
   }
   
   .btn {
-    height: 70px; /* Increase button height */
-    font-size: 24px; /* Adjust font size for buttons */
+    height: 60px; /* Adjust button height */
+    font-size: 20px; /* Adjust font size for buttons */
   }
 }
